@@ -1,0 +1,10 @@
+img {
+    height: 550px;
+    width: 300px;
+    margin-left: 5px;
+}
+
+#grid-item1 {
+    grid-area: left;
+    margin-bottom: auto;
+}

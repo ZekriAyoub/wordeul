@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/wordeul.css">
+    <link rel="stylesheet" href="style/modale.css">
+    <link rel="stylesheet" href="style/pub.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/clavier.css">
+    <script src="script/wordeul.js" defer></script>
+    <script src="script/form.js" defer></script>
+    <script src="script/modale.js" defer></script>
+    <script src="script/dictionnaire.js" defer></script>
+    <script src="script/clavier.js" defer></script>
+</head>
+
+<body>
+    <h1>Wordeul</h1>
+    <div id="grid-item1">
+        <aside><img src="publicite.png" alt="pub FireFox"></aside>
+    </div>
+    <div class="grid-container">
+        <div id="grid-item2">
+            <h2>But du jeu</h2>
+            <h3>Déterminer un mot de cinq lettres.</h3>
+            <p>Le joueur donne un mot et confirme avec Enter. Si le mot se trouve au dictionnaire,<br> l'ordinateur
+                accepte le mot et indique quelles lettres sont correctes :
+            </p>
+            <ul>
+                <li>celles correctements placées sont en vert;</li>
+                <li>celles présentes mais mal placées sont en jaune;</li>
+                <li>les autres sont absentes.</li>
+            </ul>
+            <h2>Configuration du jeu</h2>
+            <form action="wordeul.html" id="formulaire">
+                <input type="password" name="mot" placeholder="Mot à deviner" required id="word">
+                <br><br>
+                <input name="tentatives" type="number" placeholder="Nombre de tentatives" required max="10" min="1">
+                <br><br>
+                <button type="submit" id="btn3">Go</button>
+                <button type="button" id="btn4">Random</button>
+            </form>
+        </div>
+    </div>
+
+    <section id="game">
+    </section>
+
+    <div id="clavier">
+    </div>
+
+    <div class="modal" id="container">
+        <div class="modal-dialog" id="mod1">
+            <header> Résultat<span id="croix">&times;</span></header>
+            <p class="paraf">Vous avez gagné !</p>
+            <footer><button id="btn1" class="btn">OK</button></footer>
+        </div>
+    </div>
+    <div class="modal" id="container2">
+        <div class="modal-dialog" id="mod2">
+            <header> Résultat<span id="croix2">&times;</span></header>
+            <p id="raté" class="paraf"></p>
+            <footer><button id="btn2" class="btn">OK</button></footer>
+        </div>
+    </div>
+</body>
+</html>

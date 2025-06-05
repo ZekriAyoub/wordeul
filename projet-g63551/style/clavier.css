@@ -1,0 +1,54 @@
+#clavier {
+    display: block;
+    grid-area: clavier;
+    text-align: center;
+    margin: auto;
+}
+
+.key {
+    font-size: 20px;
+    background-color: rgb(99, 96, 96);
+    border-radius: 10%;
+    margin: 2px;
+    margin-bottom: 4px;
+    padding: 20px;
+    width: 40px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+}
+
+.key:hover {
+    background-color: rgb(106, 106, 106);
+}
+
+.lg {
+    display: flex;
+}
+
+#enter {
+    padding-right: 45px;
+    padding-left: 40px;
+}
+
+#backspace {
+    padding-left: 45px;
+    padding-right: 45px;
+
+}
+
+.absento {
+    background-color: red;
+}
+
+.presento {
+    background-color: yellow;
+}
+
+.correcto {
+    background-color: rgb(26, 192, 26);
+}

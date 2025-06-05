@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    color: rgb(65, 63, 63);
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    grid-template-areas: 
+        "left top right"
+        "left middle right"
+        ". clavier .";
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+}
+
+h1 {
+    text-align: center;
+    grid-area: top;
+}
+
+#game {
+    user-select: none;
+    font-size: 40px;
+    border: 1px solid gray;
+    border-radius: 3%;
+    padding: 10px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    grid-area: middle;
+    margin: auto;
+    animation-duration: 1s;
+    animation-name: none;
+    visibility: hidden;
+    margin-bottom: 20px;
+    margin-bottom: auto;
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+section {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+.tile {
+    background-color: rgb(99, 96, 96);
+    border-radius: 10%;
+    margin: 2px;
+    margin-bottom: 4px;
+    padding: 20px;
+    width: 35px;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+
+.absent {
+    background-color: red;
+}
+
+.correct {
+    background-color: rgb(31, 228, 31);
+}
+
+.present {
+    background-color: yellow;
+}
+
+.grid-container{
+    grid-area: middle;
+    margin-left: 20px;
+}
