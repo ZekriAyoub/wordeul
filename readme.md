@@ -7,7 +7,7 @@ Bienvenue dans **Wordeul**, une réplique simple du célèbre jeu de devinettes 
 Devinez un mot de 5 lettres en 6 essais maximum. À chaque tentative :
 - Les lettres bien placées sont surlignées en **vert**
 - Les lettres présentes mais mal placées sont en **jaune** 
-- Les lettres absentes sont en **gris**
+- Les lettres incorrectes sont en **rouge**
 
 ## Technologies utilisées
 
