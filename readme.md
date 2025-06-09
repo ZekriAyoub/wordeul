@@ -15,3 +15,16 @@ Devinez un mot de 5 lettres en 6 essais maximum. À chaque tentative :
 - **CSS** : styles et animations
 - **JavaScript** : logique du jeu, interactions clavier et vérification des mots
 
+## Démo : 
+[Jeu déployé et disponible ici](https://wordeul-mu.vercel.app)
+
+## Lancer le jeu
+
+1. Clone ou télécharge ce dépôt :
+```bash
+https://github.com/ZekriAyoub/wordeul.git
+```
+
+2. Ouvrez le fichier index.html dans votre navigateur.
+
+3. Jouez ! 
